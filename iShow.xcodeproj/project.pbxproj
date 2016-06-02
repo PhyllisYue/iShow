@@ -177,7 +177,8 @@
 				2E98682B1D0007BC006E888E /* JsonParser.h */,
 				2E9868291D0007B5006E888E /* JsonParser.m */,
 			);
-			path = Common;
+			name = Common;
+			path = "所需文件/Common";
 			sourceTree = "<group>";
 		};
 		2EA706D21CFFD75A00C4301E = {
@@ -203,6 +204,7 @@
 		2EA706DD1CFFD75B00C4301E /* iShow */ = {
 			isa = PBXGroup;
 			children = (
+				2E9868271D00077D006E888E /* Common */,
 				2EA7077F1CFFE38700C4301E /* PrefixHeader.pch */,
 				2EA7075B1CFFE25700C4301E /* 所需文件 */,
 				2EA707191CFFE01000C4301E /* Main */,
@@ -421,7 +423,6 @@
 		2EA7075B1CFFE25700C4301E /* 所需文件 */ = {
 			isa = PBXGroup;
 			children = (
-				2E9868271D00077D006E888E /* Common */,
 				2EA7075C1CFFE25700C4301E /* 全局 */,
 				2EA7075D1CFFE25700C4301E /* 导航栏 */,
 				2EA7075E1CFFE25700C4301E /* 标签栏 */,
