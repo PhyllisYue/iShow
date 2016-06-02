@@ -9,6 +9,6 @@
 
 #ifndef Header_h
 #define Header_h
-
+#define kRowHeight 10
 
 #endif /* Header_h */
