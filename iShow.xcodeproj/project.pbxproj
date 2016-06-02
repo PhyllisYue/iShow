@@ -51,6 +51,7 @@
 		2EA706FF1CFFD75B00C4301E /* iShowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iShowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA707031CFFD75B00C4301E /* iShowUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iShowUITests.m; sourceTree = "<group>"; };
 		2EA707051CFFD75B00C4301E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA707171CFFDA6E00C4301E /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +185,7 @@
 		2EA707161CFFDA1700C4301E /* common */ = {
 			isa = PBXGroup;
 			children = (
+				2EA707171CFFDA6E00C4301E /* Header.h */,
 			);
 			path = common;
 			sourceTree = "<group>";
