@@ -101,6 +101,12 @@
 		2EA706DD1CFFD75B00C4301E /* iShow */ = {
 			isa = PBXGroup;
 			children = (
+				2EA707161CFFDA1700C4301E /* common */,
+				2EA707131CFFD87800C4301E /* SDK */,
+				2EA707151CFFD88900C4301E /* Base */,
+				2EA707141CFFD88500C4301E /* Framework */,
+				2EA707121CFFD87500C4301E /* 所需文件 */,
+				2EA707111CFFD87100C4301E /* Main */,
 				2EA706E11CFFD75B00C4301E /* AppDelegate.h */,
 				2EA706E21CFFD75B00C4301E /* AppDelegate.m */,
 				2EA706E41CFFD75B00C4301E /* ViewController.h */,
@@ -138,6 +144,48 @@
 				2EA707051CFFD75B00C4301E /* Info.plist */,
 			);
 			path = iShowUITests;
+			sourceTree = "<group>";
+		};
+		2EA707111CFFD87100C4301E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2EA707121CFFD87500C4301E /* 所需文件 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "所需文件";
+			sourceTree = "<group>";
+		};
+		2EA707131CFFD87800C4301E /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		2EA707141CFFD88500C4301E /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		2EA707151CFFD88900C4301E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2EA707161CFFDA1700C4301E /* common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
