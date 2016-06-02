@@ -80,6 +80,7 @@
 		2E9868281D000797006E888E /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		2E9868291D0007B5006E888E /* JsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonParser.m; sourceTree = "<group>"; };
 		2E98682B1D0007BC006E888E /* JsonParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonParser.h; sourceTree = "<group>"; };
+		2E98682C1D001446006E888E /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		2EA706DB1CFFD75B00C4301E /* iShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA706DF1CFFD75B00C4301E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2EA706E11CFFD75B00C4301E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -433,6 +434,7 @@
 		2EA7075C1CFFE25700C4301E /* 全局 */ = {
 			isa = PBXGroup;
 			children = (
+				2E98682C1D001446006E888E /* Header.h */,
 			);
 			path = "全局";
 			sourceTree = "<group>";
