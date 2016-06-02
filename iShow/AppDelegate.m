@@ -7,7 +7,11 @@
 //
 
 #import "AppDelegate.h"
-
+#import "HomeViewController.h"
+#import "MessageViewController.h"
+#import "SearchViewController.h"
+#import "MyTableViewController.h"
+#import "BaseNavigationController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +20,51 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+   
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    [self.window makeKeyAndVisible];
+    
+    /*--------------标签控制器--------------*/
+    
+    NSArray *vc_names = @[@"Home",@"Search",@"Message"];
+    
+    NSMutableArray *navs = [[NSMutableArray alloc]init];
+    
+    for (int i = 0; i<3; i++) {
+        
+        Class class = NSClassFromString([NSString stringWithFormat:@"%@ViewController",vc_names[i]]);
+        //通过数组创建四个VC类
+        UIViewController *vc = [[class alloc]init];
+        
+        BaseNavigationController *nav = [[BaseNavigationController alloc]initWithRootViewController:vc];
+        
+        [navs addObject:nav];
+        
+    }
+    
+    //1.获取显示更多的storyBoard
+    UIStoryboard *mySB = [ UIStoryboard storyboardWithName:@"MyTableViewController" bundle:[NSBundle mainBundle]];
+    
+    MyTableViewController *myTVC = [mySB instantiateInitialViewController];
+    
+    
+    BaseNavigationController *navMy = [[BaseNavigationController alloc]initWithRootViewController:myTVC];
+    
+    [ navs addObject:navMy];
+    
+    
+    UITabBarController *tabVC = [[UITabBarController alloc]init];
+    
+    tabVC.viewControllers = navs ;
+
+    tabVC.selectedIndex = 0;
+    
+    self.window.rootViewController = tabVC;
+
+    
     return YES;
 }
 
