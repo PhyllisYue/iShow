@@ -7,8 +7,16 @@
 //
 
 #import "SearchViewController.h"
+#import "SearchCell.h"
 
-@interface SearchViewController ()
+//444
+
+
+
+
+@interface SearchViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property(nonatomic,strong)UITableView *tableView;
 
 @end
 
@@ -31,22 +39,47 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self createTableView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+//创建表视图
+-(void)createTableView{
+
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+    
+    _tableView.dataSource = self;
+    
+    _tableView.delegate = self;
+    
+    [self.view addSubview:_tableView];
+    
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark ----------------- 代理
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index{
+
+    return 2;
 }
-*/
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+
+    return 3;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    static NSString *identi = @"cell";
+    
+    SearchCell *cell = [tableView dequeueReusableCellWithIdentifier:identi];
+    
+    if (cell == nil) {
+        
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"SearchCell" owner:self options:nil]lastObject];
+    }
+    
+    return cell;
+}
 
 @end
