@@ -12,10 +12,9 @@
 		0F70C1F31D00248600C20612 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F70C1E71D00248600C20612 /* MyTableViewController.m */; };
 		0F70C1F41D00248600C20612 /* MyTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F70C1E81D00248600C20612 /* MyTableViewController.storyboard */; };
 		0F70C1F51D00248600C20612 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F70C1EE1D00248600C20612 /* SearchViewController.m */; };
-		0F70C1F81D0024AD00C20612 /* MesageHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F70C1F71D0024AD00C20612 /* MesageHeaderView.m */; };
-		0F70C1FD1D00253C00C20612 /* Mesage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F70C1FC1D00253C00C20612 /* Mesage.m */; };
 		0F70C2011D00273600C20612 /* 球.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F70C1FF1D00273600C20612 /* 球.png */; };
 		0F70C2021D00273600C20612 /* 重置.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F70C2001D00273600C20612 /* 重置.png */; };
+		0F70C2341D01623100C20612 /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F70C2331D01623100C20612 /* PushViewController.m */; };
 		2E9868041D000713006E888E /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9868031D000713006E888E /* BaseModel.m */; };
 		2E9868201D00074E006E888E /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9868151D00074E006E888E /* SDImageCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2E9868211D00074E006E888E /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9868191D00074E006E888E /* SDWebImageDownloader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -76,12 +75,10 @@
 		0F70C1E81D00248600C20612 /* MyTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyTableViewController.storyboard; sourceTree = "<group>"; };
 		0F70C1ED1D00248600C20612 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		0F70C1EE1D00248600C20612 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
-		0F70C1F61D0024AD00C20612 /* MesageHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MesageHeaderView.h; sourceTree = "<group>"; };
-		0F70C1F71D0024AD00C20612 /* MesageHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MesageHeaderView.m; sourceTree = "<group>"; };
-		0F70C1FB1D00253C00C20612 /* Mesage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesage.h; sourceTree = "<group>"; };
-		0F70C1FC1D00253C00C20612 /* Mesage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mesage.m; sourceTree = "<group>"; };
 		0F70C1FF1D00273600C20612 /* 球.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "球.png"; sourceTree = "<group>"; };
 		0F70C2001D00273600C20612 /* 重置.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重置.png"; sourceTree = "<group>"; };
+		0F70C2321D01623100C20612 /* PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushViewController.h; path = ../View/PushViewController.h; sourceTree = "<group>"; };
+		0F70C2331D01623100C20612 /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushViewController.m; path = ../View/PushViewController.m; sourceTree = "<group>"; };
 		2E9868021D000713006E888E /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		2E9868031D000713006E888E /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		2E9868141D00074E006E888E /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
@@ -222,6 +219,8 @@
 			children = (
 				0F70C1E01D00248600C20612 /* MessageViewController.h */,
 				0F70C1E11D00248600C20612 /* MessageViewController.m */,
+				0F70C2321D01623100C20612 /* PushViewController.h */,
+				0F70C2331D01623100C20612 /* PushViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -236,8 +235,6 @@
 		0F70C1E31D00248600C20612 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0F70C1FA1D00251600C20612 /* HearderViewTV */,
-				0F70C1F91D0024E800C20612 /* MesageTableView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -307,24 +304,6 @@
 			children = (
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		0F70C1F91D0024E800C20612 /* MesageTableView */ = {
-			isa = PBXGroup;
-			children = (
-				0F70C1FB1D00253C00C20612 /* Mesage.h */,
-				0F70C1FC1D00253C00C20612 /* Mesage.m */,
-			);
-			name = MesageTableView;
-			sourceTree = "<group>";
-		};
-		0F70C1FA1D00251600C20612 /* HearderViewTV */ = {
-			isa = PBXGroup;
-			children = (
-				0F70C1F61D0024AD00C20612 /* MesageHeaderView.h */,
-				0F70C1F71D0024AD00C20612 /* MesageHeaderView.m */,
-			);
-			name = HearderViewTV;
 			sourceTree = "<group>";
 		};
 		0F70C1FE1D00271100C20612 /* 临时图片 */ = {
@@ -665,9 +644,8 @@
 				2E9868231D00074E006E888E /* UIImageView+WebCache.m in Sources */,
 				2EA706E61CFFD75B00C4301E /* ViewController.m in Sources */,
 				0F70C1F31D00248600C20612 /* MyTableViewController.m in Sources */,
+				0F70C2341D01623100C20612 /* PushViewController.m in Sources */,
 				2E9868211D00074E006E888E /* SDWebImageDownloader.m in Sources */,
-				0F70C1FD1D00253C00C20612 /* Mesage.m in Sources */,
-				0F70C1F81D0024AD00C20612 /* MesageHeaderView.m in Sources */,
 				2EA706E31CFFD75B00C4301E /* AppDelegate.m in Sources */,
 				0F70C1F51D00248600C20612 /* SearchViewController.m in Sources */,
 				2E98682A1D0007B5006E888E /* JsonParser.m in Sources */,
